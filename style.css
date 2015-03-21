@@ -1,0 +1,83 @@
+body{
+  padding=0;
+  margin=0;
+}
+
+#cabecalho {
+    height:70px;
+    background-color: #E6E6FA;
+    padding-top: 10px;
+}
+
+#esquerda {
+    padding-top: 50px;
+    width: 50%;
+    height: 300px;
+    float: left;
+    background-color: #E6E6FA;
+    border-top: 3px solid white;
+}
+
+#direita{
+  padding-top: 50px;
+  width: 50%;
+  height: 300px;
+  float: right;
+  background-color: #E6E6FA;
+  border-top: 3px solid white;
+}
+
+form { 
+  font-family: Verdana,Tahoma,sans-serif;         
+  font-size: 15px;  
+  max-width: 1000px;
+}
+
+table {
+  font-size: 12px;
+}
+
+h1 {
+  margin-botton: 150px;
+  margin-left:20px;
+  text-shadow: 1px 1px 1px white;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  width: 150px;
+}
+
+input { 
+  width: 150px; 
+  padding: 10px; 
+  color: black; 
+  margin-left: 30px; 
+  border: 1px solid; 
+  -webkit-border-radius: 5px;
+}
+
+form label { 
+  margin-left: 10px; 
+  color: #FFFFFF; 
+  font-weight: bold; 
+}
+
+#menu ul {
+	padding:0px;
+	margin:0px;
+	list-style: none;
+  text-align: left;
+}
+
+footer {
+  background-color: #cecece;
+  font-size: 10pt;
+  font-style: italic;
+  text-align: center;
+}
+
+#rodape_esq {
+  background-color: #E6E6FA;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form name="meu_form">
+  
+  <header id="cabecalho">
+    <h1>Compromissos Agendados</h1>
+  </header>
+  
+  <section id="esquerda">
+    
+    <p class="nome">
+      <input type="text" id="_nome"     required="required" placeholder="digite o nome"  name="nome" </input>
+      <label for="nome">Destinatário</label>
+    </p>
+    
+    <p class="email">
+      <input type="text" id="_email" required="required" placeholder="digite o email"
+           name="email" />
+      <label for="email">E-mail</label>
+    </p>
+    
+    <p class="data">
+      <input type="date" id="_data" required="required" placeholder="digite a data do compromisso" name="data" />
+      <label for="data">Data</label>
+    </p>
+    
+    <p class="compromisso" >
+      <textarea id="compromisso" rows="3" cols="50" >Digite o compromisso</textarea>
+    </p>
+    
+    <footer id="rodape_esq">
+    <nav id="menu">
+      <ul>
+        <li>
+          <input type="submit" value="Adicionar" /></li>
+        <li>
+          <input type="submit" value="Limpar" /></li>
+      </ul>
+    </nav>
+    </footer>
+  </section>
+    
+  <aside id="direita">
+    
+    <table border="1">
+       <caption>
+         Tabela dos Contatos
+      </caption>
+       <thead> 
+        <tr>
+        <th>Nome
+        <th>Email 
+        <th>Enviar
+        </tr>
+         <tr>
+         <td>Virginia</td>
+           <td>virginiapedroso@ig.com.br</td>
+           <td> <input type="submit" value="ok" /></td>
+         </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </aside>
+  
+  <footer>
+    <p>Desenvolvido por Virginia - mar/2015. Contato: <a href="mailto:virginiapedroso@ig.com.br">
+  virginiapedroso@ig.com.br</a></p>
+  </footer>
+  
+</form>
+</body>
+</html>
