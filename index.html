@@ -3,47 +3,51 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+
+	<title>Email Dinamico</title>
+
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 	<form name="meu_form">
   
   <header id="cabecalho">
-    <h1>Compromissos Agendados</h1>
+    <h1>E-mail dinamico</h1>
   </header>
   
+  <div id="conteudo">
+    
   <section id="esquerda">
-    
+
+    <label for="nome">Destinatário</label>
     <p class="nome">
-      <input type="text" id="_nome"     required="required" placeholder="digite o nome"  name="nome" </input>
-      <label for="nome">Destinatário</label>
+      <input type="text" id="_nome" required="required" placeholder="digite o nome"  name="nome" </input>
+      
     </p>
-    
+    <label for="email">E-mail</label>
     <p class="email">
       <input type="text" id="_email" required="required" placeholder="digite o email"
            name="email" />
-      <label for="email">E-mail</label>
+      
     </p>
-    
+    <label for="data">Data</label>
     <p class="data">
       <input type="date" id="_data" required="required" placeholder="digite a data do compromisso" name="data" />
-      <label for="data">Data</label>
+      
     </p>
     
     <p class="compromisso" >
-      <textarea id="compromisso" rows="3" cols="50" >Digite o compromisso</textarea>
+      <textarea id="compromisso" rows="3" cols="45" >Digite o compromisso</textarea>
     </p>
     
     <footer id="rodape_esq">
-    <nav id="menu">
-      <ul>
-        <li>
-          <input type="submit" value="Adicionar" /></li>
-        <li>
-          <input type="submit" value="Limpar" /></li>
-      </ul>
-    </nav>
+    
+      
+          <p class="submit"> 
+        <input type="submit" onclick="Enviar();" value="Enviar" /> 
+      </p>
+
     </footer>
   </section>
     
@@ -70,7 +74,9 @@
     </table>
   </aside>
   
-  <footer>
+  </div>
+
+  <footer id="rodape">
     <p>Desenvolvido por Virginia - mar/2015. Contato: <a href="mailto:virginiapedroso@ig.com.br">
   virginiapedroso@ig.com.br</a></p>
   </footer>

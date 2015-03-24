@@ -1,36 +1,37 @@
 body{
   padding=0;
-  margin=0;
+  margin=0 auto;
+  background-size: cover;
+  background-color: #E6E6FA;
 }
 
 #cabecalho {
-    height:70px;
-    background-color: #E6E6FA;
+    height:100%;
     padding-top: 10px;
+    text-shadow: 1px 1px 1px green;
+    border-bottom: 3px solid white;
+}
+
+section { 
+  width: 50%; 
+  height: 100%; 
 }
 
 #esquerda {
     padding-top: 50px;
-    width: 50%;
-    height: 300px;
-    float: left;
-    background-color: #E6E6FA;
-    border-top: 3px solid white;
+    float: left;   
 }
 
 #direita{
   padding-top: 50px;
-  width: 50%;
-  height: 300px;
   float: right;
-  background-color: #E6E6FA;
-  border-top: 3px solid white;
 }
 
 form { 
-  font-family: Verdana,Tahoma,sans-serif;         
+  font-family: Verdana,Tahoma,sans-serif;
   font-size: 15px;  
   max-width: 1000px;
+  heigth:100%;
 }
 
 table {
@@ -38,10 +39,8 @@ table {
 }
 
 h1 {
-  margin-botton: 150px;
-  margin-left:20px;
-  text-shadow: 1px 1px 1px white;
   text-align: center;
+  
 }
 
 nav li {
@@ -50,34 +49,42 @@ nav li {
 }
 
 input { 
-  width: 150px; 
+  width: 70%; 
   padding: 10px; 
   color: black; 
-  margin-left: 30px; 
+  margin-left: 10px; 
   border: 1px solid; 
   -webkit-border-radius: 5px;
 }
 
 form label { 
   margin-left: 10px; 
-  color: #FFFFFF; 
+  color: #000000; 
   font-weight: bold; 
 }
 
 #menu ul {
-	padding:0px;
-	margin:0px;
-	list-style: none;
+  padding:0px;
+  margin:0px;
+  list-style: none;
   text-align: left;
 }
 
-footer {
+#rodape {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
   background-color: #cecece;
   font-size: 10pt;
   font-style: italic;
-  text-align: center;
 }
 
 #rodape_esq {
   background-color: #E6E6FA;
+  text-align: center;
+}
+
+#compromisso {
+  margin-left: 10px;
 }
