@@ -7,79 +7,86 @@
 	<title>Email Dinamico</title>
 
 	<link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="script.js"></script>
+
 </head>
 <body>
 
-	<form name="meu_form">
+	<form action="" method="post" id="meu_form">
   
-  <header id="cabecalho">
-    <h1>E-mail dinamico</h1>
-  </header>
+    <header id="cabecalho">
+      <h1>E-mail dinamico</h1>
+    </header>
   
-  <div id="conteudo">
+    <div id="conteudo">
     
-  <section id="esquerda">
+      <section id="esquerda">
 
-    <label for="nome">Destinatário</label>
-    <p class="nome">
-      <input type="text" id="_nome" required="required" placeholder="digite o nome"  name="nome" </input>
-      
-    </p>
-    <label for="email">E-mail</label>
-    <p class="email">
-      <input type="text" id="_email" required="required" placeholder="digite o email"
-           name="email" />
-      
-    </p>
-    <label for="data">Data</label>
-    <p class="data">
-      <input type="date" id="_data" required="required" placeholder="digite a data do compromisso" name="data" />
-      
-    </p>
-    
-    <p class="compromisso" >
-      <textarea id="compromisso" rows="5" cols="50" >Digite o compromisso</textarea>
-    </p>
-    
-    <footer id="rodape_esq">
-          <p class="submit"> 
-          <input type="submit" onclick="Adicionar();" value="Adicionar na tabela" /> 
+        <form id="my_form">
+
+        <label for="nome">Destinatário</label>
+        <p class="nome">
+          <input type="text" id="txtNome"  placeholder="digite o nome"  name="nome" </input>
         </p>
+        <label for="email">E-mail</label>
+        <p class="email">
+            <input type="text" id="txtEmail" placeholder="digite o email" name="email" />
+        </p>
+        <label for="data">Data</label>
+        <p class="data">
+          <input type="date" id="txtData" placeholder="digite a data do compromisso" name="data" />
+        </p>
+        <label for="compromisso">Compromisso</label>
+        <p class="compromisso" >
+          <input type="text" id="txtCompromisso" placeholder="digite o compromisso" name="compromisso" />
+        </p>
+    
+        <footer id="rodape_esq">
+          <p>
+            <input type="submit" value="Adicionar na Tabela" name="botao" />
+          </p>
+        </footer>
+
+      </form>
+      </section>
+    
+      <aside id="direita">
+        <form id="form_tabela">
+          <div style="width:500px; height: 320px; overflow: auto;">
+        <table border="1" id="minha_tabela" class="display" cellspacing="0" width="100%" />
+          <thead> 
+            <tr>
+              <th>Nome
+              <th>Email 
+              <th>Data
+              <th>Compromisso
+              <th>Ação
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+<footer id="rodape_direta">
+          <p>
+            <input type="submit" value="Limpar LocalStorage" name="botao_limpar" />
+          </p>
+        </footer>
+
+      </form>
+      </aside>
+
+    </div>
+
+    <footer id="rodape">
+      <p>Desenvolvido por Virginia - mar/2015. Contato: 
+         <a href="mailto:virginiapedroso@ig.com.br&subject=contato&body=Estou enviando este email diretamente da pagina web.">
+         virginiapedroso@ig.com.br</a></p>
     </footer>
 
-  </section>
-    
-  <aside id="direita">
-    
-    <table border="1">
-       <caption>
-         Tabela dos Contatos
-      </caption>
-       <thead> 
-        <tr>
-        <th>Nome
-        <th>Email 
-        <th>Enviar
-        </tr>
-         <tr>
-         <td>Virginia</td>
-           <td>virginiapedroso@ig.com.br</td>
-           <td> <input type="submit" value="ok" /></td>
-         </tr>
-      </thead>
-      <tbody>
-      </tbody>
-    </table>
-  </aside>
-  
-  </div>
+  </form>
 
-  <footer id="rodape">
-    <p>Desenvolvido por Virginia - mar/2015. Contato: 
-      <a href="mailto:virginiapedroso@ig.com.br&subject=contato&body=Estou enviando este email diretamente da pagina web.">
-  virginiapedroso@ig.com.br</a></p>
-  </footer>
-  
-</form>
 </body>
 </html>
